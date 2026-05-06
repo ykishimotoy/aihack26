@@ -53,10 +53,10 @@ class FilmGrainAnimation {
                 p.x + wobbleX, p.y, 0,
                 p.x + wobbleX, p.y, p.size
             );
-            gradient.addColorStop(0, `rgba(255, 214, 0, ${p.opacity * 0.7})`);
-            gradient.addColorStop(0.4, `rgba(204, 164, 0, ${p.opacity * 0.4})`);
-            gradient.addColorStop(0.8, `rgba(0, 229, 255, ${p.opacity * 0.2})`);
-            gradient.addColorStop(1, 'rgba(0, 229, 255, 0)');
+            gradient.addColorStop(0, `rgba(157, 78, 221, ${p.opacity * 0.7})`);
+            gradient.addColorStop(0.4, `rgba(100, 50, 180, ${p.opacity * 0.4})`);
+            gradient.addColorStop(0.8, `rgba(0, 212, 255, ${p.opacity * 0.2})`);
+            gradient.addColorStop(1, 'rgba(0, 212, 255, 0)');
 
             this.ctx.fillStyle = gradient;
             this.ctx.beginPath();
@@ -128,10 +128,10 @@ class ProjectorAnimation {
                 beam.x, 0, 0,
                 beam.x, this.canvas.height, this.canvas.height * 0.8
             );
-            gradient.addColorStop(0, `rgba(255, 214, 0, ${beam.opacity * 2})`);
-            gradient.addColorStop(0.3, `rgba(204, 164, 0, ${beam.opacity})`);
-            gradient.addColorStop(0.7, `rgba(0, 229, 255, ${beam.opacity * 0.5})`);
-            gradient.addColorStop(1, 'rgba(0, 229, 255, 0)');
+            gradient.addColorStop(0, `rgba(157, 78, 221, ${beam.opacity * 2})`);
+            gradient.addColorStop(0.3, `rgba(100, 50, 200, ${beam.opacity})`);
+            gradient.addColorStop(0.7, `rgba(0, 212, 255, ${beam.opacity * 0.5})`);
+            gradient.addColorStop(1, 'rgba(0, 212, 255, 0)');
 
             const halfWidth = this.canvas.height * beam.spread;
             this.ctx.beginPath();
@@ -161,7 +161,7 @@ class ProjectorAnimation {
             }
 
             const alpha = p.opacity * p.life;
-            this.ctx.fillStyle = `rgba(255, 214, 0, ${alpha})`;
+            this.ctx.fillStyle = `rgba(157, 78, 221, ${alpha})`;
             this.ctx.beginPath();
             this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
             this.ctx.fill();
@@ -258,9 +258,9 @@ class SparkAnimation {
             const wobbleX = Math.sin(spark.wobble) * 8;
             const alpha = spark.opacity * spark.life;
 
-            const r = spark.isGold ? 255 : 0;
-            const g = spark.isGold ? 214 : 229;
-            const b = spark.isGold ? 0 : 255;
+            const r = spark.isGold ? 255 : 157;
+            const g = spark.isGold ? 200 : 78;
+            const b = spark.isGold ? 0 : 221;
 
             const sparkGradient = this.ctx.createRadialGradient(
                 spark.x + wobbleX, spark.y, 0,
@@ -329,8 +329,8 @@ class RippleAnimation {
             opacity: 0.5,
             lineWidth: 2.5,
             color: isPurple
-                ? { r: 255, g: 214, b: 0 }
-                : { r: 0,   g: 229, b: 255 }
+                ? { r: 157, g: 78, b: 221 }
+                : { r: 0,   g: 212, b: 255 }
         });
     }
 
@@ -455,8 +455,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const style = document.createElement('style');
     style.textContent = `
         @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 30px rgba(255, 214, 0, 0.5); }
-            50%       { box-shadow: 0 0 60px rgba(255, 214, 0, 0.9); }
+            0%, 100% { box-shadow: 0 0 30px rgba(157, 78, 221, 0.5); }
+            50%       { box-shadow: 0 0 60px rgba(157, 78, 221, 0.9); }
         }
     `;
     document.head.appendChild(style);
@@ -469,7 +469,7 @@ document.addEventListener('DOMContentLoaded', () => {
         left: 0;
         width: 0%;
         height: 3px;
-        background: linear-gradient(90deg, #CC9900, #FFD600, #00E5FF);
+        background: linear-gradient(90deg, #7B2FBE, #9D4EDD, #00D4FF);
         z-index: 9999;
         transition: width 0.1s ease;
     `;

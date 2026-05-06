@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>制作ガイドライン | 札幌すごいAI映画祭 2026春</title>
-    <meta name="description" content="札幌すごいAI映画祭 2026春の応募作品に関する制作ガイドラインです。">
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <title>ルール・ガイドライン | 札幌すごいAIハッカソン 2026春</title>
+    <meta name="description" content="札幌すごいAIハッカソン 2026春の詳細ルールとガイドラインです。">
+    <link rel="icon" type="image/png" href="images/logot.png">
+    <link rel="apple-touch-icon" href="images/logot.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(ellipse at center top, #1a0a2e 0%, var(--dark-bg) 60%);
+            background: radial-gradient(ellipse at center top, #1a1400 0%, var(--dark-bg) 60%);
             padding: var(--spacing-xl) 0 var(--spacing-lg);
             text-align: center;
         }
@@ -67,7 +67,7 @@
             font-weight: 900;
             margin-bottom: var(--spacing-md);
             padding-bottom: 0.6rem;
-            border-bottom: 2px solid rgba(157, 78, 221, 0.3);
+            border-bottom: 2px solid rgba(255, 214, 0, 0.3);
             display: flex;
             align-items: center;
             gap: 0.6rem;
@@ -107,7 +107,7 @@
             color: var(--text-secondary);
             font-size: 0.97rem;
             line-height: 1.8;
-            border-bottom: 1px solid rgba(157, 78, 221, 0.07);
+            border-bottom: 1px solid rgba(255, 214, 0, 0.07);
         }
 
         .guideline-list li:last-child {
@@ -129,21 +129,12 @@
         .guideline-note {
             margin-top: var(--spacing-md);
             padding: var(--spacing-sm) var(--spacing-md);
-            background: rgba(157, 78, 221, 0.08);
+            background: rgba(255, 214, 0, 0.08);
             border-radius: 8px;
-            border: 1px solid rgba(157, 78, 221, 0.2);
+            border: 1px solid rgba(255, 214, 0, 0.2);
             font-size: 0.9rem;
             color: var(--text-secondary);
             line-height: 1.8;
-        }
-
-        .guideline-note a {
-            color: var(--film-cyan);
-            text-decoration: none;
-        }
-
-        .guideline-note a:hover {
-            text-decoration: underline;
         }
 
         .guideline-warning {
@@ -157,10 +148,48 @@
             line-height: 1.8;
         }
 
+        .judging-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-md) 0;
+        }
+
+        .judging-table th,
+        .judging-table td {
+            padding: 0.8rem var(--spacing-sm);
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 214, 0, 0.1);
+            font-size: 0.95rem;
+        }
+
+        .judging-table th {
+            font-weight: 700;
+            color: var(--film-cyan);
+            background: rgba(0, 229, 255, 0.05);
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+
+        .judging-table td {
+            color: var(--text-secondary);
+        }
+
+        .judging-table td:first-child {
+            color: var(--text-primary);
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .score-col {
+            color: var(--film-purple) !important;
+            font-weight: 700 !important;
+            white-space: nowrap;
+        }
+
         .guideline-footer-note {
             margin-top: var(--spacing-xl);
             padding-top: var(--spacing-lg);
-            border-top: 1px solid rgba(157, 78, 221, 0.2);
+            border-top: 1px solid rgba(255, 214, 0, 0.2);
             text-align: center;
             color: var(--text-secondary);
             font-size: 0.9rem;
@@ -176,6 +205,7 @@
         .guideline-footer-note a:hover {
             color: var(--film-cyan);
         }
+
     </style>
 </head>
 <body>
@@ -183,10 +213,10 @@
     <!-- Hero -->
     <div class="guideline-hero">
         <div class="container">
-            <a href="index.html" class="back-link">← 応募ページに戻る</a>
+            <a href="index.html" class="back-link">← トップページに戻る</a>
             <h1 class="hero-title" style="animation: none;">
-                <span class="title-main" style="font-size: clamp(1.8rem, 5vw, 3rem);">制作ガイドライン</span>
-                <span class="title-sub">札幌すごいAI映画祭 2026春</span>
+                <span class="title-main" style="font-size: clamp(1.8rem, 5vw, 3rem);">ルール・ガイドライン</span>
+                <span class="title-sub">札幌すごいAIハッカソン 2026春</span>
             </h1>
         </div>
     </div>
@@ -197,151 +227,196 @@
             <div class="guideline-content">
 
                 <p class="guideline-intro">
-                    このガイドラインは、札幌すごいAI映画祭 2026春に応募するすべての作品に適用されます。<br>
-                    <strong>AI映像制作を楽しく・正直に・互いが気持ちよく</strong>いられるための最低限のルールをまとめました。応募前に一読してください。
+                    このガイドラインは、札幌すごいAIハッカソン 2026春に参加するすべての方に適用されます。<br>
+                    <strong>快適に戦い、公平に競い、互いが気持ちよくいられる</strong>ための最低限のルールをまとめました。エントリー前に一読してください。
                 </p>
 
-                <!-- 1. AIの使い方 -->
+                <!-- 1. 参加ルール -->
                 <div class="guideline-section">
                     <h2 class="guideline-section-title">
-                        <span class="num">01</span>AIの使い方について
+                        <span class="num">01</span>参加ルール
                     </h2>
                     <p>
-                        本映画祭は、<strong>生成AIを主要な制作手法として用いた映像作品</strong>を対象としています。編集補助や軽微な補正のみにAIを使った作品は、趣旨に合わない場合があります。
-                    </p>
-                    <p>
-                        使用するAIツールの種類や数に制限はありません。触りたてのツール一本でもOK。どのAIをどう使ったか、応募フォームの記載欄に書いてください。
-                    </p>
-                    <p>
-                        <strong>一部AI生成・一部実写の組み合わせも可</strong>です。「AIで生成した映像に実写を合成した」「実写をベースにAIで加工した」といった作品も歓迎します。
-                    </p>
-                    <p>
-                        作品内で使用する言語は自由です。日本語・英語にかぎらず、架空の言語・人造言語・存在しない言語など、どんな言語表現も認めます。
-                    </p>
-                    <div class="guideline-note">
-                        ノイズ除去・アップスケールなど「目立たない補正」のみにAIを用いた作品は、本映画祭の趣旨上「AI作品」とは認められない場合があります。
-                    </div>
-                    <div class="guideline-note">
-                        使用するAIツールの利用規約（商用利用可否・生成物の権利関係等）は、応募前に応募者自身でご確認ください。利用規約上、映像への使用や公開配信が制限されているツールの使用には注意が必要です。
-                    </div>
-                </div>
-
-                <!-- 2. 法令遵守 -->
-                <div class="guideline-section">
-                    <h2 class="guideline-section-title">
-                        <span class="num">02</span>法令遵守について
-                    </h2>
-                    <p>
-                        応募者は、<strong>日本の著作権法・個人情報保護法その他関連法令を遵守</strong>して生成AIを利用してください。AIで作ったから何でもOK、ということにはなりません。
-                    </p>
-                    <p>
-                        また、経済産業省・総務省が示す「AI事業者ガイドライン」の精神——<strong>人間中心・安全・透明・説明可能</strong>——を意識したAI利用を心がけてください。堅く考えすぎなくていいですが、「これ大丈夫かな？」と思ったら立ち止まる習慣が大事です。
-                    </p>
-                    <div class="guideline-note">
-                        参考リンク：<br>
-                        <a href="https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html" target="_blank" rel="noopener noreferrer">文化庁「AIと著作権に関する考え方」</a><br>
-                        <a href="https://www.bunka.go.jp/seisaku/chosakuken/pdf/94097701_01.pdf" target="_blank" rel="noopener noreferrer">文化庁「AIと著作権に関するチェックリスト＆ガイダンス」（PDF）</a><br>
-                        <a href="https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html" target="_blank" rel="noopener noreferrer">経済産業省「AI事業者ガイドライン」</a><br>
-                        <a href="https://www.meti.go.jp/policy/mono_info_service/contents/ai_guidebook_set.pdf" target="_blank" rel="noopener noreferrer">経済産業省「コンテンツ制作のための生成AI利活用ガイドブック」（PDF）</a>
-                    </div>
-                </div>
-
-                <!-- 3. 著作権・権利について -->
-                <div class="guideline-section">
-                    <h2 class="guideline-section-title">
-                        <span class="num">03</span>著作権・権利について
-                    </h2>
-                    <p>
-                        応募作品はオリジナルであり、<strong>第三者の著作物・商標・キャラクター等を無断で利用してはなりません</strong>。AIで生成した素材であっても、既存の著作物を実質的に模倣・再現するような利用は著作権侵害にあたる可能性があります。文化庁が示す趣旨を尊重し、AIの学習・生成に関わる権利者の利益を不当に害さないよう配慮してください。
-                    </p>
-                    <p>以下の権利処理は、応募前に自身で確認・完了しておいてください。</p>
-                    <ul class="guideline-list">
-                        <li>映像・静止画・脚本・アートなどの著作権</li>
-                        <li>作中で使用する音楽・効果音の著作権・原盤権（本映画祭はYouTube配信を予定しています。YouTubeオーディオライブラリ・CC0・適切な許諾を得たもの等、YouTube配信に対応したライセンスであることを確認してください）</li>
-                        <li>出演者がいる場合の肖像権・パブリシティ権</li>
-                        <li>実在の施設・建物・展示物等を撮影して使用する場合の撮影許可・利用許可</li>
-                        <li>企業ロゴ・ブランド名・商品名等を使用する場合の商標権・著作権への配慮</li>
-                        <li>特定の作家・イラストレーター等を名指しで模倣するプロンプトの使用（権利侵害の観点から<strong>避けることを強く推奨</strong>します）</li>
-                        <li>使用するAIツールの学習データに関する問題（各ツール提供事業者のポリシーに従うものとし、主催者はこれに起因するトラブルの責任を負いません）</li>
-                    </ul>
-                    <p>
-                        権利処理はすべて<strong>応募者自身の責任</strong>で行うものとします。応募者は、本作品が第三者の権利を侵害していないこと、および本ガイドラインに違反していないことを保証するものとします。上映・配信後に権利侵害等の問題が判明した場合、主催者は該当作品の公開停止・削除等の対応を行うことがあります。
-                    </p>
-                </div>
-
-                <!-- 4. 著作権の帰属と運営側の使用許諾 -->
-                <div class="guideline-section">
-                    <h2 class="guideline-section-title">
-                        <span class="num">04</span>著作権の帰属と運営による使用について
-                    </h2>
-                    <p>
-                        応募作品の著作権は、引き続き<strong>応募者本人に帰属</strong>します。主催者が権利を取得することはありません。
-                    </p>
-                    <p>
-                        ただし、応募をもって、主催者が以下の目的で作品を使用・公開することを許諾いただいたものとみなします。
+                        本ハッカソンは、<strong>AIや技術を活用した価値あるプロダクト</strong>を短時間で生み出すことを競うイベントです。
                     </p>
                     <ul class="guideline-list">
-                        <li>当日の会場スクリーンでの上映</li>
-                        <li>YouTubeおよびその他配信プラットフォームでの放映・アーカイブ公開</li>
-                        <li>映画祭の事前・事後広報（SNS、ウェブサイト、告知動画等）への使用</li>
-                        <li>作品への映画祭ロゴ・クレジットの貼り付け</li>
-                        <li>広報・紹介目的での部分的な切り抜きや編集</li>
-                        <li>その他、映画祭の運営上、合理的に必要と認められる使用</li>
+                        <li><strong>持ち込み自由</strong>：ノートPC、外部デバイス、ハードウェア等、何を持ち込んでもかまいません。</li>
+                        <li><strong>使用ツール制限なし</strong>：AIツール（ChatGPT、Claude、Cursor等）を含む、あらゆるツール・サービスの使用を認めます。</li>
+                        <li><strong>個人・チームどちらも可</strong>：一人でも複数人でも参加できます。チームの人数は<strong>1チーム4名まで</strong>。個人での参加も可能です。</li>
+                        <li>事前の学習・技術習得はOKです。当日のアウトプットが評価対象となります。</li>
                     </ul>
                     <div class="guideline-note">
-                        上記の使用にあたり、作品の内容を本質的に改変することはありません。また、作者名（ハンドルネーム）は可能な範囲でクレジット表記します。
+                        事前に作ったコードや素材を活用することは認めますが、当日のテーマに対して新たに制作した内容が評価の対象です。既存プロダクトをそのまま提出することは認めません。
                     </div>
                 </div>
 
-                <!-- 5. 個人情報・プライバシー -->
+                <!-- 2. 開発ルール -->
                 <div class="guideline-section">
                     <h2 class="guideline-section-title">
-                        <span class="num">05</span>個人情報・プライバシーの尊重
+                        <span class="num">02</span>開発ルール
+                    </h2>
+                    <p>開発時間（16:10〜18:10）には以下のルールが適用されます。</p>
+                    <ul class="guideline-list">
+                        <li><strong>スライド作成禁止</strong>：開発時間中は、発表スライドの制作・編集を禁止します。手を動かすことに集中してください。</li>
+                        <li>スライド作成は発表準備時間（18:10〜18:40）から解禁されます。</li>
+                        <li>ドキュメント類の作成（README等）は開発の一部として認めます。</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 成果物について -->
+                <div class="guideline-section">
+                    <h2 class="guideline-section-title">
+                        <span class="num">03</span>成果物について
                     </h2>
                     <p>
-                        実在の個人の顔写真・音声・SNS投稿などを、<strong>本人の同意なくAIの学習・生成素材として用いることは禁止</strong>します。プライバシー権・肖像権の侵害にあたる可能性があります。
+                        成果物は「完成品」である必要はありません。<strong>「価値が伝わる状態」</strong>であれば、どんな形式でも構いません。
                     </p>
-                    <p>
-                        実在人物の顔や声をAIで合成した「ディープフェイク」を含む作品を応募する場合は、<strong>当該人物本人の明確な同意</strong>を得たうえで、エンドクレジット等に「AIによる合成表現を含む」旨を明示してください。
-                    </p>
-                    <p>
-                        政治家・著名人・故人を扱う場合も、その名誉・人格への配慮を欠いた表現は認めません。
-                    </p>
+                    <ul class="guideline-list">
+                        <li>プロトタイプ（動くものが理想ですが、モックでもOK）</li>
+                        <li>UIモック（Figmaや画像でも可）</li>
+                        <li>AIデモ（プロンプト＋出力の提示でも可）</li>
+                        <li>動画（デモ動画、コンセプト動画等）</li>
+                        <li>その他、価値を伝えられると判断できるもの</li>
+                    </ul>
                     <div class="guideline-note">
-                        未成年の応募者は、保護者の同意を得たうえで応募してください。
+                        完成度よりも「その2時間でどんな意思決定をし、何を形にしたか」が問われます。未完成でも臆せず発表してください。
                     </div>
                 </div>
 
-                <!-- 6. 禁止コンテンツ -->
+                <!-- 4. 発表ルール -->
                 <div class="guideline-section">
                     <h2 class="guideline-section-title">
-                        <span class="num">06</span>禁止コンテンツ
+                        <span class="num">04</span>発表ルール
                     </h2>
-                    <p>以下を含む作品の応募は禁止します。</p>
+                    <p>発表は2部構成です。基本発表は全員必須、技術解説は任意です。</p>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin: var(--spacing-md) 0 var(--spacing-sm); color: var(--film-cyan);">■ 基本発表（必須 / 5分以内）</h3>
+                    <ul class="guideline-list">
+                        <li>スライドは<strong>最大3枚</strong>（超過したスライドは使用不可）</li>
+                        <li>スライド構成の推奨：①課題・テーマ解釈　②アイデア・価値　③体験イメージ</li>
+                        <li>5分を超えた場合、審査員が発表を止めることがあります</li>
+                        <li>成果物のデモを含めること（ライブデモ・動画・スクリーンショット等）</li>
+                    </ul>
+
+                    <div class="prompt-block">
+                        <div class="prompt-block-header">
+                            <span class="prompt-block-label">スライド構成サンプルプロンプト</span>
+                            <button class="prompt-copy-btn" onclick="copyPrompt(this)" title="コピー"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+                        </div>
+                        <pre class="prompt-pre" id="slidePrompt"># スライド1：テーマ解釈 / 課題
+- 当日テーマの解釈（どう捉えたか）
+- なぜその解釈を選んだか（捨てた選択も含めて）
+- 解決したい体験 / 課題
+
+# スライド2：アイデア / 価値
+- 作ったもののコンセプト（何を作ったか）
+- ユーザーにとっての価値（何が嬉しいか）
+- 他と違うポイント（なぜこれが成立するか）
+
+# スライド3：体験 / デモ
+- 実際の使い方（ユーザーストーリー）
+- デモの流れ（何が起きるか）
+- 現時点の完成度と、あえて削ったもの</pre>
+                    </div>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin: var(--spacing-md) 0 var(--spacing-sm); color: var(--film-cyan);">■ 技術解説（任意 / 最大3分）</h3>
+                    <ul class="guideline-list">
+                        <li>アーキテクチャ・システム構成の説明</li>
+                        <li>技術選定の理由・根拠</li>
+                        <li>AIの使い方・プロンプト設計等</li>
+                    </ul>
+                    <div class="guideline-note">
+                        技術解説は発表点数に直接影響しませんが、技術加点（最大＋8点）の評価材料になります。技術的な工夫がある場合は積極的にアピールしてください。
+                    </div>
+                </div>
+
+                <!-- 5. 審査基準 -->
+                <div class="guideline-section">
+                    <h2 class="guideline-section-title">
+                        <span class="num">05</span>審査基準
+                    </h2>
+                    <p>審査は「ベース評価」と「技術加点」の2段階で行います。合計最大18点。</p>
+
+                    <table class="judging-table">
+                        <thead>
+                            <tr>
+                                <th>評価項目</th>
+                                <th>配点</th>
+                                <th>評価内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>① インパクト</td>
+                                <td class="score-col">0〜5点</td>
+                                <td>欲しい・面白い・驚きがあるか</td>
+                            </tr>
+                            <tr>
+                                <td>② 実在感</td>
+                                <td class="score-col">0〜5点</td>
+                                <td>実際に使われるイメージが湧くか</td>
+                            </tr>
+                            <tr>
+                                <td>③ 動作レベル</td>
+                                <td class="score-col">0〜2点</td>
+                                <td>モックレベルで一連の体験が成立するか、実際のシステムとして動くか</td>
+                            </tr>
+                            <tr>
+                                <td>④ 公開・再現性</td>
+                                <td class="score-col">0〜2点</td>
+                                <td>成果物公開をGitHub等で行っているか、公開URLなどで実際にアクセスし体験できるか</td>
+                            </tr>
+                            <tr>
+                                <td>⑤ 設計・技術選定</td>
+                                <td class="score-col">0〜2点</td>
+                                <td>技術選定が合理的で構造的か</td>
+                            </tr>
+                            <tr>
+                                <td>⑥ システム連携</td>
+                                <td class="score-col">0〜2点</td>
+                                <td>複数要素が構造的に連携しているか</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="guideline-note">
+                        <strong>評価方針：</strong><br>
+                        アイデアのみ・技術のみの評価は行いません。ユーザー体験として成立しているかを最重視します。技術は義務ではありませんが、強力な加点要素です。
+                    </div>
+                </div>
+
+                <!-- 6. 著作権・権利 -->
+                <div class="guideline-section">
+                    <h2 class="guideline-section-title">
+                        <span class="num">06</span>著作権・権利について
+                    </h2>
+                    <p>
+                        成果物の著作権は引き続き<strong>参加者に帰属</strong>します。主催者が権利を取得することはありません。
+                    </p>
+                    <p>ただし、参加をもって、主催者が以下の目的で成果物を使用・公開することを許諾いただいたものとみなします。</p>
+                    <ul class="guideline-list">
+                        <li>イベントの記録・広報（SNS、ウェブサイト等）</li>
+                        <li>今後のイベント運営・告知への活用</li>
+                    </ul>
+                    <p>使用する素材・ライブラリ・APIの利用規約については、参加者自身で確認・遵守してください。</p>
+                </div>
+
+                <!-- 7. 禁止コンテンツ -->
+                <div class="guideline-section">
+                    <h2 class="guideline-section-title">
+                        <span class="num">07</span>禁止コンテンツ
+                    </h2>
+                    <p>以下を含む成果物・発表は禁止します。</p>
                     <ul class="guideline-list danger">
                         <li>法令に反する内容、犯罪の教唆・助長</li>
                         <li>差別・ヘイトスピーチ・暴力の扇動</li>
                         <li>虚偽情報の意図的な拡散を目的とする表現</li>
                         <li>児童ポルノ・リベンジポルノ、その他重大な人権侵害</li>
-                        <li>ジェンダー・人種・出自・障がい等に関するステレオタイプを無批判に増幅させる表現</li>
-                        <li>その他、公序良俗に反し公共の場での上映が憚られる内容</li>
+                        <li>その他、公序良俗に反する内容</li>
                     </ul>
                     <div class="guideline-warning">
-                        AIで生成した素材であっても、上記の禁止事項が適用されます。生成AIの使用を理由に、違法・不当なコンテンツが正当化されることはありません。
+                        AIで生成した素材であっても、上記の禁止事項が適用されます。生成AIの使用を理由に違法・不当なコンテンツが正当化されることはありません。
                     </div>
-                </div>
-
-                <!-- 7. 透明性 -->
-                <div class="guideline-section">
-                    <h2 class="guideline-section-title">
-                        <span class="num">07</span>透明性・説明責任
-                    </h2>
-                    <p>
-                        応募フォームには、使用したAIツールを記載する欄があります。どんなツールをどう使ったか詳細に書いてくれると、審査に役立ちます。（おまけに主催者側も新しい使い方を知れて嬉しいです。）
-                    </p>
-                    <p>
-                        主催者が権利侵害やガイドライン違反の疑義を持った場合、追加の説明や資料提出を求めることがあります。正当な理由なく説明を拒んだ場合、選考対象外となる可能性があります。
-                    </p>
                 </div>
 
                 <!-- 8. 主催者の裁量 -->
@@ -350,26 +425,21 @@
                         <span class="num">08</span>主催者の判断について
                     </h2>
                     <p>
-                        本ガイドラインに重大に反すると判断した場合、主催者は応募受理後であっても、選考対象からの除外・上映中止・受賞取消などの措置を行うことがあります。その際は、可能な範囲で応募者に理由を通知します。
+                        本ガイドラインに重大に反すると判断した場合、主催者は参加者を失格とし、表彰の取消等の措置を行うことがあります。
                     </p>
                     <p>
-                        応募数が想定を大きく上回った場合、上映枠や上映方法を主催者判断で調整する場合があります。
-                    </p>
-                    <p>
-                        応募後の作品差し替えについては、主催者の判断により認められる場合があります。
-                    </p>
-                    <p>
-                        ガイドラインの解釈・適用に関する最終判断は主催者に委ねられます。不明点があれば、応募前にお気軽にDiscordでご相談ください。
+                        審査内容・結果に関する最終判断は主催者に委ねられます。不明点があれば、エントリー前にDiscordでお気軽にご相談ください。
                     </p>
                     <div class="guideline-note">
-                        技術的トラブル・通信環境・会場設備の都合等により、上映・配信が中断または内容・日程が変更となる場合があります。あらかじめご了承ください。
+                        技術的トラブル・通信環境・会場設備の都合等により、進行内容や時間配分が変更となる場合があります。あらかじめご了承ください。
                     </div>
                 </div>
 
                 <div class="guideline-footer-note">
                     <p>ご不明な点は <a href="https://discord.gg/Ve2tQeN7cw" target="_blank" rel="noopener noreferrer">Discord（札幌すごいAI会）</a> でお気軽にどうぞ。</p>
-                    <p style="margin-top: 0.5rem;">主催：札幌すごいAI会 / AIサムライ</p>
-                    <p style="margin-top: 1.5rem;"><a href="index.html">← 応募ページに戻る</a></p>
+                    <p style="margin-top: 0.5rem;">主催：札幌すごいAI会 / AIサムライ 岸本悠佑</p>
+                    <p style="margin-top: 1rem;"><a href="conditions.html" target="_blank" rel="noopener noreferrer">参加規約を確認する →</a></p>
+                    <p style="margin-top: 1.5rem;"><a href="index.html">← トップページに戻る</a></p>
                 </div>
 
             </div>
@@ -381,10 +451,25 @@
         <div class="container">
             <div class="footer-bottom">
                 <p>&copy; 2026 札幌すごいAI会 All rights reserved.</p>
-                <p class="footer-hashtag">#札幌すごいAI映画祭</p>
+                <p class="footer-hashtag">#札幌すごいAIハッカソン</p>
             </div>
         </div>
     </footer>
 
+    <script>
+        const ICON_COPY  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+        const ICON_CHECK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+        function copyPrompt(btn) {
+            const pre = btn.closest('.prompt-block').querySelector('.prompt-pre');
+            navigator.clipboard.writeText(pre.textContent).then(() => {
+                btn.innerHTML = ICON_CHECK;
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerHTML = ICON_COPY;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>

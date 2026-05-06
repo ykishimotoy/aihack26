@@ -1,163 +1,81 @@
-# さっぽろすごいAIまつり - ランディングページ
+# 札幌すごいAIハッカソン 2026春 — ランディングページ
 
-2026年2月15日開催「さっぽろすごいAIまつり」の公式ランディングページです。
+AI駆動開発ハッカソン（札幌すごいAIハッカソン 2026春）の公式ランディングページです。
 
-## 🔥 特徴
+## 概要
 
-- **炎のモチーフ**: 炎のパーティクルアニメーション、グラデーション、カラーパレット
-- **ダークテーマ**: モダンで洗練されたダークデザイン
-- **プロフェッショナル**: ITコンサル的な信頼感とキャッチーさの両立
-- **完全レスポンシブ**: モバイル、タブレット、デスクトップ全対応
-- **インタラクティブ**: スクロールアニメーション、パララックス効果
+「2時間で、世界を作れ。」をキャッチコピーに、思考 → 実装 → 発表を圧縮する実験場を提供するハッカソンイベントのLPです。
 
-## 📋 コンテンツ構成
-
-### 3つのプログラム
-1. **AIビジネスコンテスト** - 市民が挑戦するビジネスアイデアの発表
-2. **AI芸術祭** - AIと共に創るアート・音楽・映像のライブショー
-3. **AI展示・体験会** - 巨大展示ブースでのAI作品展示と体験会
-
-### すごいAI道場（独立セクション）
-3つのプログラムを支える基礎知識を提供する無償e-learningサイト。全国どこからでもアクセス可能で、AIをゼロから学べる体系的カリキュラムを提供。
-
-## 📁 ファイル構成
+## ファイル構成
 
 ```
 /
-├── index.html      # LP本体
-├── style.css       # スタイルシート
-├── script.js       # JavaScript（アニメーション、インタラクション）
-├── requirements.md # プロジェクト要件定義
-├── todo.md         # 作業履歴・チェックリスト
-└── README.md       # このファイル
+├── index.html        # メインLP（全セクション）
+├── guideline.html    # ルール・ガイドライン詳細
+├── conditions.html   # 参加規約
+├── style.css         # スタイルシート
+├── script.js         # JavaScript（アニメーション、インタラクション）
+├── requirements.md   # プロジェクト要件定義
+└── README.md         # このファイル
 ```
 
-## 🚀 使い方
+## ページ構成（index.html）
 
-### ローカルで表示
+1. **HERO** — キャッチコピー・開催概要・CTA
+2. **INTRODUCTION** — イベントの思想・設計思想
+3. **WHAT YOU WILL DO** — 体験の流れ（4ステップ）
+4. **RULES** — ルール（自由度の高さ）
+5. **THEME** — お題（当日発表）
+6. **TIMELINE** — 時間設計（16:00〜20:00）
+7. **OUTPUT & PRESENTATION** — 成果物と発表形式
+8. **JUDGING** — 審査基準（ベース評価＋技術加点）
+9. **AWARDS** — 表彰（最優秀賞・審査員特別賞）
+10. **JUDGES** — 審査員紹介
+11. **ENTRY** — エントリーCTA
+12. **ORGANIZER** — 主催者紹介
+13. **FOOTER**
 
-1. ブラウザで `index.html` を開く
+## ローカルで表示
 
 ```bash
 open index.html
 ```
 
-または、ローカルサーバーを起動（推奨）：
+またはローカルサーバーを起動：
 
 ```bash
-# Python 3の場合
 python3 -m http.server 8000
-
-# Node.jsのhttp-serverを使う場合
-npx http-server
 ```
 
-その後、ブラウザで `http://localhost:8000` を開く
+その後、ブラウザで `http://localhost:8000` を開く。
 
-### デプロイ
+## ＜仮＞ 要確認項目
 
-静的サイトホスティングサービスにそのままデプロイ可能：
+以下の情報が未確定のため、`＜仮：...＞` とマークして実装済みです。確定後に差し替えてください。
 
-- **Netlify**: ドラッグ&ドロップでデプロイ
-- **Vercel**: GitHubリポジトリと連携
-- **GitHub Pages**: リポジトリの設定から有効化
-- **Firebase Hosting**: `firebase deploy` コマンド
+| 項目 | 場所 |
+|------|------|
+| 開催日 | index.html hero-date, hero-info-badge, footer |
+| 会場名・住所 | index.html hero-info-badge, footer |
+| 参加費 | index.html（現状記載なし、必要であれば追加） |
+| エントリーフォームURL | index.html `#entry` セクション CTAボタンhref |
+| チーム人数制限 | guideline.html 参加ルール |
+| 審査員の名前・肩書き・写真・コメント | index.html `#judges` セクション（3枠プレースホルダー） |
+| 最優秀賞の賞品 | index.html `#awards` セクション |
+| 審査員特別賞の賞品 | index.html `#awards` セクション |
 
-## 🖼️ 画像の差し替え
-
-現在、全ての画像はプレースホルダーとして表示されています。実際の画像に差し替える手順：
-
-1. 画像ファイルを `images/` フォルダに配置（フォルダがない場合は作成）
-2. `index.html` 内の `.image-placeholder` 要素を `<img>` タグに置き換え
-
-例：
-```html
-<!-- 置き換え前 -->
-<div class="image-placeholder">
-    <span class="placeholder-text">会場イメージ</span>
-</div>
-
-<!-- 置き換え後 -->
-<img src="images/venue.jpg" alt="Deep Tech CORE SAPPORO 会場" class="section-image">
-```
-
-必要に応じて `style.css` に以下を追加：
-```css
-.section-image {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-}
-```
-
-## 🔗 設定されているリンク
-
-- **すごいAI道場**: https://dojo.sugoiai.org/index.html
-- **Discord招待**: https://example.com（本番環境では実際のDiscord招待URLに変更してください）
-- **クラウドファンディング**: https://camp-fire.jp/projects/892256/view
-
-## 🎨 カラーパレット
+## カラーパレット
 
 ```css
---flame-red: #FF4500;
---flame-orange: #FF6B35;
---flame-yellow: #FFA500;
---flame-bright: #FFD700;
---dark-bg: #0a0a0a;
---dark-surface: #1a1a1a;
---dark-elevated: #2a2a2a;
+--film-purple: #9D4EDD;
+--film-cyan:   #00D4FF;
+--film-gold:   #FFD700;
+--dark-bg:     #08080f;
 ```
 
-## 📱 レスポンシブ対応
+## デプロイ先
 
-- **デスクトップ**: 1200px以上
-- **タブレット**: 768px - 1024px
-- **モバイル**: 768px以下
-
-## ⚡ パフォーマンス最適化
-
-実装済みの最適化：
-- CSS Grid/Flexboxによる効率的なレイアウト
-- Intersection Observerによる遅延アニメーション
-- requestAnimationFrameによるスムーズなスクロール
-- CSS transformsによるハードウェアアクセラレーション
-
-## 🔧 カスタマイズ
-
-### テキストの変更
-
-`index.html` を編集して、各セクションのテキストを変更できます。
-
-### スタイルの調整
-
-`style.css` のCSS変数（`:root` セクション）を変更することで、カラーやスペーシングを簡単にカスタマイズできます。
-
-### アニメーションの調整
-
-`script.js` で以下の設定を変更可能：
-- スクロールアニメーションのタイミング
-- パララックス効果の強さ
-- ホバーエフェクトの挙動
-
-## 📋 チェックリスト
-
-デプロイ前の最終確認：
-
-- [ ] Discord招待リンクを実際のURLに変更
-- [ ] 画像プレースホルダーを実際の画像に差し替え
-- [ ] OGP画像の設定（`<meta property="og:image">`）
-- [ ] ファビコンの追加
-- [ ] Google Analytics等の設定（必要に応じて）
-- [ ] 全リンクの動作確認
-- [ ] モバイル/タブレット/デスクトップでの表示確認
-
-## 📞 お問い合わせ
-
-プロジェクトに関する問い合わせ：
-- **主催**: 札幌すごいAI会
-- **X (Twitter)**: @ykishimotoy
-- **ハッシュタグ**: #さっぽろすごいAIまつり
+`hack-2026-spring.sugoiai.org`（CNAME設定済み）
 
 ---
 
