@@ -1054,6 +1054,22 @@ body {
     opacity: 0.4;
 }
 
+.coming-soon-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-surface);
+}
+
+.coming-soon-text {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-secondary);
+    opacity: 0.3;
+}
+
 .judge-info {
     padding: var(--spacing-md);
     display: flex;
