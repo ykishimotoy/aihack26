@@ -1094,6 +1094,11 @@ body {
     letter-spacing: 0.05em;
 }
 
+.judge-title-small {
+    font-size: 0.75rem;
+    display: block;
+}
+
 .judge-comment {
     font-size: 0.9rem;
     color: var(--text-secondary);
